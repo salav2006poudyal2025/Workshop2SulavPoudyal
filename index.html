@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="hero">
+    <video autoplay loop muted playsinline id="video-background">
+      <source src="video/hero.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <nav class="navbar">
+      <span class="logo"><b> My Portfolio </b></span>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="menu-toggle" id="menu-button" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </nav>
+
+    <div class="hero-content">
+      <h2>Salav Poudyal</h2>
+      <p>Full Stack Developer & UI/UX Enthusiast</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="image/IMG-20250808-WA0024.jpg" alt="Portrait of Salav" class="about-img" />
+        <p>
+          Hello! I'm learning web development and this is my first portfolio website. I am currently pursuing my BSc (Hons) in Computer Science as a student at Herald College Kathmandu, studying under the University of Wolverhampton. I have a good academic record from reputed institutes and a strong interest in technology and programming since early days. I am known for solving problems and leading team. I am actively looking forward to start my career in the tech field.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <p>HTML • CSS • JavaScript • Python • C# • SQL • Figma</p>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+
+      <article class="projects-grid">
+
+        <div class="project-card" tabindex="0" data-sound="hover">
+          <h3>Caesar Cipher Encryption & Decryption Tool</h3>
+          <p>Developed a tool to encrypt and decrypt text using the Caesar Cipher algorithm.</p>
+        </div>
+
+        <div class="project-card" tabindex="0" data-sound="hover">
+          <h3>Weather App</h3>
+          <p>Responsive weather app using OpenWeatherMap API.</p>
+        </div>
+
+        <div class="project-card" tabindex="0" data-sound="hover">
+          <h3>Design</h3>
+          <p>Business card design and To-Do app UI in Figma.</p>
+        </div>
+
+        <div class="project-card" tabindex="0" data-sound="hover">
+          <h3>To-Do App</h3>
+          <p>Task management app with full CRUD features and dark/light mode.</p>
+        </div>
+
+        <div class="project-card" tabindex="0" data-sound="hover">
+          <h3>Hospital Management System</h3>
+          <p>Relational database system with CRUD operations and SQL JOIN queries.</p>
+        </div>
+
+      </article>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:Salavpoudyal2063@gmail.com">Salavpoudyal2063@gmail.com</a><br>
+        Phone: +977-9765430584
+      </p>
+
+      <h3>Enter your details</h3>
+
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Message output for validation -->
+      <div id="form-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 My Portfolio</p>
+  </footer>
+
+  <audio id="hover-sound" src="hover.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
